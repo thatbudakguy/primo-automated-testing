@@ -1,0 +1,32 @@
+{
+    "name": "primo-automated-testing",
+    "version": "1.0.0",
+    "description": "templates for automated testing of primo's new UI using protractor.",
+    "scripts": {
+        "prepare": "node_modules/.bin/webdriver-manager update",
+        "test": "protractor conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thatbudakguy/primo-automated-testing.git"
+    },
+    "keywords": [
+        "protractor",
+        "angular",
+        "exlibris",
+        "primo",
+        "testing"
+    ],
+    "author": "Nick Budak",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/thatbudakguy/primo-automated-testing/issues"
+    },
+    "homepage": "https://github.com/thatbudakguy/primo-automated-testing#readme",
+    "dependencies": {
+        "protractor": "^5.1.1"
+    },
+    "devDependencies": {
+        "jasmine-spec-reporter": "^4.0.0"
+    }
+}
