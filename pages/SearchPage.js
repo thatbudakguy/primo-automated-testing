@@ -1,20 +1,24 @@
 var BasePage = require('./BasePage.js');
 
 var SearchPage = function() {
+
     this.url = 'http://alliance-primo-sb.hosted.exlibrisgroup.com/primo-explore/search?vid=LCC_NEWUI';
     this.pageLoaded = this.inDom($('prm-search'));
-    // header
-    this.userMenu = element(by.css('.user-menu-button'));
-    this.loginButton = element(by.css('[ng-click="$ctrl.handleLogin();"]'));
-    // search
-    this.searchBar = element(by.id('searchBar'));
+
+    /**
+     * Search elements
+     */
+    this.searchBar = $('#searchBar');
     this.searchResults = element.all(by.repeater('item in $ctrl.itemlist'));
-    this.searchResultsCount = element(by.css('.results-count'));
+    this.searchResultsCount = $('.results-count');
     this.searchScopes = element.all(by.repeater('item in group'));
     this.searchScopeNames = $$('.suggestion-scope');
-    // advanced search
+
+    /**
+     * Advanced search elements
+     */
     this.advancedSearchForm = element(by.name('advancedSearch'));
-    this.advancedSearchButton = element(by.css('.switch-to-advanced'));
+    this.advancedSearchButton = $('.switch-to-advanced');
     this.advancedSearchQuery = element(by.model('row.searchQuery'));
     this.materialType = element(by.model('$ctrl.materialType.selection'));
     this.materialTypeOptions = element.all(by.repeater('material in $ctrl.materialType.displayOptions'));
