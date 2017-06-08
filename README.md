@@ -5,7 +5,7 @@ borrows heavily from [qualityshepherd's protractor examples](https://github.com/
 
 ## usage
 ### setup
-you need the latest versions of [node.js](nodejs.org) and [npm](npmjs.com).
+you need the latest versions of [node.js](nodejs.org) and [npm](npmjs.com) as well as the jdk and jre 8.
 ```
 git clone https://github.com/thatbudakguy/primo-automated-testing.git
 npm install
