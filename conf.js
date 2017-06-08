@@ -1,7 +1,7 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     directConnect: true,
-    specs: ['specs/login.js'],
+    specs: ['specs/search.js', 'specs/fullview.js'],
     framework: 'jasmine2',
     jasmineNodeOpts: {
         showColors: true,
